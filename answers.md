@@ -171,4 +171,109 @@ JSON:
   },
   "url": "\/dash\/406474\/timeboard1",
   "resource": "\/api\/v1\/dash\/406474"
-}
+} 
+```
+
+# Once this is created, access the Dashboard from your Dashboard List in the UI:
+## Set the Timeboard's timeframe to the past 5 minutes
+The smallest interval I can set it is 1 hour. 
+
+![](https://lh3.googleusercontent.com/9ktV_AIZPwdb25OPWwLG0GZ6IhIGdVD-Qkf9sVsiX-d3ThVmB8n9sw5oVg9gdVuPIPVdAy5s1Gzc5CKkd0m6iqeLpJmrojyz37KBu1392yftlBgXvcot4HoAOz9DAWIbOEQP5Nv-1ulGomm1u-sfJ8AH5b7L44-y8hv-Ze99PM4E_R6woaDpyrbJul5n5d-vpSQ88RV3pp83XT4jgYQm74vSAInyifrYC-L_5sep1_l4Aa6M7fGi2P-Q0D_ythEptI2CNvB8C9b39uO3cPlE69bPwyPpRzgT8EvIwYrWXyEU5e-09VpjQ6veOCTG3WlX2Ne9ki3XJ8vfU_5zLa9KXpxMMCB5nAGjKd4oAkgX5Rpw7gfIlC6AV0Sa2XV_SP3o0tRqliwPEOdvhbQfPbn1FGaPQ54STI1CNiJyiGbX5Qk9Oz-3TR1bH9f9JjU1jrKJPJWuWEFeUyEXFG9zu2-c2a-S2c4Sn6CGQ_4PZ1UtBDoZhjwR4blYmOnoat9bvAM4DtysXuAAeT3nEaIwPKaWCTRE7l2yh9ykVIExi4hpr6mHVAtDUpwTuNCiISNcb2VwaggANlYWTb8PhreXSpwoduy0X0RsKrwxCNGAolanFrI=w1193-h525-no)
+
+You can however highlight any given portion of the graph to zoom in on the data. You can select 5minutes interval and take a screenshot of it by using the small camera icon from the top right hand corner. 
+
+![](https://lh3.googleusercontent.com/QKduUhxUWhGao9Xwp7bT-U4erchZtuzRJhd_kxjwfypUKAYQ1Jfq2_lWkdLfsJfSlJuiMVI-vh3FP58vwWsJ1BE6um-eHBvJsKQbAS-SpxTtIz0Kom-FBsy8PxNN_maI4Ghu6X-skND_w9UKoTPre-MxNG1m7Hfg7QCr0vyuM3bVxcwUHP-eSyyQ79enr8-0MuW23Lnj7YwlNK4k8dmbKWciuM7ze8dyJKkP13hPAENLlvHXaw7SMTkaC0L-HWKgi-5AsUoDQEGtBad66FQ0K7lsBPmvLfx0jhLXsXh-u9UrwrKWgwQTrOeBfQaBUANrVp3MxfTcvUxJMl9Y8gpQ1GIaTifL5e8HOZBESwlsg3QzTOig7i4-c76ajvZhFTk0ixWr9UFDAuF2dqzK8D3MViA8_evCqS2cO9VMfJnEBudcVfHkaKbeKsg-ic6ULRUFPYDf8YxwxtpGNkQ_LjJDOV44P01FNUzhmgzMtHU9FNtVqiZJ0zDJFE5v3-fURuKGWFz2dgygjlsns-_16NM7gQ77wXtUxYapXLkG0Sl4jfhna3CTMw5YS5jqT5KCt7JaLxl7OTObRHLRzCXlNi15iMCxj0sIhHn2cTfyTCnPW6U=w714-h397-no)
+
+## Take a snapshot of this graph and use the @ notation to send it to yourself.
+
+I could not send the snapshot to myself in an email. I commented on it, which created an event on my eventstream with the snapshot and my comment tagged me in. 
+
+![](https://lh3.googleusercontent.com/pB9sG13UPMrauEos8ONPiAVZLFd4IzzJjdtjt2bdo9BzBZ3Fr60Fl5UiUibxj951W2FJ5XUiU0ihTCgfla2qBXg6AiRRzZgW9S674VOclkIt38agymYPCM1e71F2dB20MrnWScnRiUpQHh1gPBZsd4VMckpdrXF9HsfQcH_Mu6tUxlM0i2TFp4l7EQa6fdUSw3tYPfpKUMpbcQRjeiAkkpM9b2jRSspaQudHqPUm11i8NF_mjAAsHsAgI3FhKXUEDBwGWyUstS6G-2TgP_EGesCY7-TXYVWNMewS6cCICfaABvGN4VV26i78jWu2DXwcw4PRjzrWBrrXuHEwULqEIgNgdVOZMKJbyAYiPOzv2onlbl4y9DdIyS7duF6DzcuGatrCSBgBfwOohgLnR7p0J1UBdlhZZxz4cp9D9CQoop0lZWOKpFPnNUYtLFJGFdNirPTPHuBGoyQQ8mbWvaeV7CVX1Ps3f2FwcwnHa2xwK3fOit9YGKRqhm3eQIn5KkAPAX3Gz38vLsp09xjAWvAEsZU-h6GOy5JBKwn4vO9OfFvuWED1W93RYPs_vcc8awMdLltyiRgPaA-l5fy_c7WyH1OVx1uOIJp125gPA_zeXio=w867-h315-no)
+
+## Bonus Question: What is the Anomaly graph displaying?
+
+# Monitoring Data
+
+## Create a new Metric Monitor that watches the average of your custom metric (my_metric) and will alert if it’s above the following values over the past 5 minutes:
+
+## Warning threshold of 500
+## Alerting threshold of 800
+## And also ensure that it will notify you if there is No Data for this query over the past 10m.
+
+I followed the guidelines https://docs.datadoghq.com/guides/monitors/  and https://docs.datadoghq.com/guides/monitors/ 
+
+1. Open your user interface and use the left hand side menu to open the Monitors menu. Click on New Monitor.
+2. Select Metric from the list on the left hand side. 
+3. Make sure you have Threshold Alert selected on the top of your page.
+4. In the next step you select what metric you want to base your monitor on. Just start typing the name of the metric in the box, or scroll through to find the one.  In my case I used my_metric.
+5. Select the host you want to monitor this metric on. 
+6. You can use tags in the optional exclude box to not monitor certain group of machines. 
+7. In the next box you can decide if you want to monitor the metric’s average, maximum, minimum, or sum.  In my sample I used avg.
+8. In the next section we can set the conditions we want to trigger the message. 
+9. Select above from the dropdown and set the time limit to 5 minutes.
+10. Set the thresholds as per the requirements. In my case I want to receive an Alert if the average is above 800, a Warning if the value is between 500 and 800.
+11. Scroll further down and select **Notify** if data is missing for more than **10 minutes**.
+
+![](https://lh3.googleusercontent.com/N7oqIUPVvBOQP0vF33h1wUtWmBRy8lhw-4VuLE0Yvux6u8L3Nrv9gdYLGJbApBOUsamPWZV8gxxZvEM23cWGafI5Ky0rsxQRgYAUjNwWJn470MCucH-rmIDCd4Aly_JU19IbUb6uob4NGiReLuc-GsD0iTYej93XYn3uvRUjGV4Ov2x3-0-xMHBg54njJwDOP9g2sYJQF8zZJkacj0LAifcigycCG_5oR5LS0bVMP50h_QwpTraxVVoCbZ7wytJqgeUmAQRcO6gkLynnPPZYiS9ScD_-xpfO_G_MpMQ7CPIO5-smwCDccG47CjMdCdBKPgEnIv9zJkmC_-4SHyLj-bRSd2bQEJDLB66lStqxDyin0a11GLn04-LYkBOQbMuI8IP9z-FOT4zOPPqR4OByfYySWWXFmKcU8bDKDwPwQFQj50eH8clUV--temjGmwPAZ-llwCcWPmqFbwlf_OztTdmq7vaqtaIqEbW3H8aduXbqaEkP-BqSze0wALCpH0uYKqQjUKcWaIxRm0UP4My7NHHcabCvJCocESUZ5qcGN5ceimdjVJpwEYwcVhg2lKWFZ4NcXgI0XGqPEasrkzbVato_6D48CX-YOi0xe6ddKHc=w1026-h548-no)
+
+## Send you an email whenever the monitor triggers. Create different messages based on whether the monitor is in an Alert, Warning, or No Data state. Include the metric value that caused the monitor to trigger and host ip when the Monitor triggers an Alert state.
+
+In section four we can customize the message you receive for each event. 
+1. First give a title to your monitor.
+2. Type in {{ to see all available variable options or refer to our guide here: https://docs.datadoghq.com/monitoring/#message-template-variables
+3. Check out my very basic sample case which sends you a different message for each scenario we defined in the steps above: Alert, Warning, NoData
+```
+{{#is_alert}}
+## the sum of RandomNum average is over 800 in the last 5 minutes
+value: {{value}}
+Host:{{host.name}} on {{host.ip}}
+{{/is_alert}} 
+
+{{#is_warning}}
+the sum of RandomNum average is over 500 but below 800 in the last 5 minutes
+{{/is_warning}} 
+
+{{#is_no_data}}
+no data in last 10 minutes
+{{/is_no_data}}
+```
+5. Type in the name of the person you want to be notified. 
+
+![](https://lh3.googleusercontent.com/sSrHr411T2bKUokHJKgyj__9LL3kg7__KPbPr3MO9X3L_hd8jyZ-Bq5xFM3WJ5oP-lGsbYTrzGtTlwPUA1FtVqK9b7r-a5uHukIqDCHm-EitLwNixBV6_fc9ck51QzSFij3oqwN4UyH-ozXGoIXRp-MUfo5cZ6DdEOA29vPs0XLeL_rIaZNll4-Jp1x1-eGB_nS5zcjdkQWIcP5RHqpjBlR7Z_6zK83Iz1kgv7s7fHtKOJiycI3SMurPo41DjiXkhvHjTNK0wEKnb53DMzCcXXUfwX00XqJN4F3dyGyP6i0QdDUqX8gZcUWMt3Fy1UCUKo7Fz-P53gKUxHiUIf-FTiSPCQ3dftQP15NiXhFKtYcZXWct68mSUinPGn9wLGUMyIYE8fA_bPSULSUQaXwmeMeLItQEmLhk1AWKubxZMBN1pbXnUZ-t3zbGNjPzB3YvprxcQmA7XvMm8cTjZRvfqzMSvdBasNpb1f3Rl6INi3S0bvP-TkhIJfjroWwj1RLHNKgmQycbM5V7p9lrpiI6Gp6cVZnN1--2rSnSiKrxontWtV07FlHBnjKNXGhbtLFRFkdMAsukeWk9AdbXUSlpIYBnSuqkQ9wMveiBjoaESaA=w1002-h548-no)
+
+## When this monitor sends you an email notification, take a screenshot of the email that it sends you.
+![](https://lh3.googleusercontent.com/4jNy3AVMnAYT40niq2KDescsPnaaWzO779WhTHbhI3LtNuIfRKN1MC4HtfUm1pRB9f8RFaGVOhahIUKSg_FGNXeLueQR8xbXcZoeXhOnQmKiWdtNEnjky4svpWST4kBYhR61NQyMST33hyKv4qshKqf9GnsyBbDu79gSJmw1X5rADjhnTAzsbk-mThX6Cld8vbIo8lqjdZAEac-A8Ur0rNfmaiKJnZVOY4musPLDuWh9WNcz8bXDjH4DVidVL_q3aCf_0mztKiL3n0HjVahokRy75WKXyIgMnU1DlU2xf5MgNwdOi3ZxhMDw_kQssfci0-uvgB1KC_4O-ThpQvcZLvLZfVoq_PisaMJD9ARJsggixay8BguT0U8kMKRBmuION3sSNZomg4KtqpcwVtIf-tmWk21vgTDCRaGrgA_G94173ct0-n02zRzStynk-S-yrmgHUYdPsBcRtL2sJzLnCmVS1yGVqq1Gka-dabVJFLYkcoITjY7aSbj8yUm3eWviNDcJOiKNH3weHAXXNysSFmhy_mspf71PQWhe5tzbOihYSdfGdjCmg97_gwxLh8z7N8o0myR3Z9w97CKZIzxQ9pscYvEsJGiCX7qKLT4UWrI=w712-h511-no)
+
+## Bonus Question: Since this monitor is going to alert pretty often, you don’t want to be alerted when you are out of the office. Set up two scheduled downtimes for this monitor: One that silences it from 7pm to 9am daily on M-F, and one that silences it all day on Sat-Sun. Make sure that your email is notified when you schedule the downtime and take a screenshot of that notification.
+
+Downtime set to Monday-Friday, 7pm-9am:
+![](https://lh3.googleusercontent.com/ekudlH0rXyggmNmJi98DWQoVZSD39miKqiw03L3hAI-9yt7Ct2oZW6DJiHGBY7OpSCkib8DN4o9l1hi2L5CZkobUqp73Lidp1tVQ3oQVjwbuzKjgijt7IEqNCTQvRiw_nhU-SO3uNYjPguxNF-3lZU3yqoxT540XU0Qyl5OZiuX4syCN0_jAhQEfPsAKnnkygdRZ5fLYjIbAaAHeH46rj4h-c-hbFpLz8ZSPeNRS5MR8lU3ahg5GJrDeSQyB1XpGS4CyA3GTeQBOSr_A1mSp4P0GD5jMtqOhYmJNpxU4A7NUu_Pq_t-Yi_tqovYdSdxIrMSIxS5PBFxTND2VSBFdP8Pyq4IGJLAta4dEd-OUMl-hgBxd3QXhZiuOy0v_huP668Y4E4SJd-D2YrgTm9iqUpWfHh3BidpFEn-sRgOh5wnGmOafk7ir--q-cELq12IDkM68X4KOEcf_4zvX22La8TbwxJSilB03V6_kwaXBd1cjgeWEUH_X3o-HJqtmOzZVFYuaXzUn7__AdRgGMYv2ogCyaoXwkf7J-3X1W7qA9hm-5Rw_F6YxeN3-jV8nyOc41c0rjYzPtEE06QK7j-8Uq8NJ4JeXlY-AUVVB_xwLBvU=w684-h548-no)
+
+Downtime set to Saturday 9am to Monday 9am: 
+![](https://lh3.googleusercontent.com/OlasytV0pU6UV8woA2_mfYWlPMi6jOgLHzEK73CZLqi5KiK5kQ6Jgn1uijmjMlIS-Wxnm-3nT9UoJP-4udbOdM8iPjfDspcH-1e979Lcl9fO6dbmOtaEfV1Y25KQwHetsLEidLRB0ZoJUDkRYEEDihLWsnvrt7dGlBNdETmZtdVjmlIcF4fhfvOCGBd0ftVmGsUFjAIVcB66OZDC891uhPnGmw5Sbs6gmLWnkFZ0_vqnfY1H7_qB1ymkLfOg9tRbITP75UtcMkMmNzS3IvJY2cjvvY82Z-WEOmqWYWxAEX2KfO96Uditb1-sDxbj6bk_SEJQcdS2N71tRgjyBRY5wSy1ahri8Xq1UoYlxm-PysA4U4TvOwUKQDdK9lTATOMVTxegX5j-4h4xz8nYJYKfCiuoyHvZu55oMqKc4hRx8ifEwQ-gDKM5NEEU4t-QpAxUO4szxRHiPIKEgCA1OJ3E8j7BJEGazbMGeOxgMV10KByR7-Qh1hZcPIDGDEOI6MMIp7EdgBQdcooSNuYghDklBA49Ccc4g6jINkZXqZtYHzCfljZgc1w0Eo5yGmqwqk4kuGB8SnO3IZPtUELFSp_kTkYFoD1vGZS3kQn3AKM7frI=w719-h548-no)
+
+Email received:
+![](https://lh3.googleusercontent.com/Iex3fHF9g-Qb_XF8ZVW6h2Z6tE3twsf1mwEUFwqxTkKa43fpckuKq_IEQcWZdAGOPC6Z2fhf2CAaJ3Fs07KUd_4OPBAqGf-YtBVgPz15fvZ7BnBLudwdfLe9v1VbO4EZRqmytoTmPck8DutXG3e32bxB48CZNFQ435loOjP9WT4Rnpik6XE_Vq2RRuj2bjqpjQPQVXmYQL8pY1IWZR5xYcQpb-VbRQlZLLUHoo_j6Rxbpv77k8f10MFGhsW4kmrNDgVQC6EuDUEMt9ykRMd1h_xcOsZiTll1Qb1ShKDrSzT9doj6XAcSzYBsTh6W2SPXvfckV-tzihENBHubSVfeEzWWid-CzjZzGi1L1buewpLjtDj9Dfmq2SBugOc1y0itzOcLtYc1ysATsPiFYgxzWJUwhPus0WW_3HsHNPbm8TcmJ-np2R8I3HCyGCx-7i-LsyPp6VtDaEo4tk-QpTnZG6uqLWWAPNNHoG-xb1PlvqEbxNvWKvnS9cgLsO3Uto0mCSdqwh1PBOW96DWa4Scm5tgOJ3ElH37xfQxGkKYG2lnrCtLv-ZOQj8urOaO5qIBNeBJTUbylGouV13gpTBLg6LxHYEXjUDeQy_Rhlz3A3yE=w901-h461-no)
+
+# Collecting APM Data:
+
+## Given the following Flask app (or any Python/Ruby/Go app of your choice) instrument this using Datadog’s APM solution.
+
+Datadog’s APM allows you to collect performance metrics by tracing your code to determine which parts of your application are slow or inefficient.
+To demonstrate the usage and available metrics let’s create an application and monitor its performance using ddtrace agent. For more detailed guide click here: https://docs.datadoghq.com/tracing/
+
+1. Copy and paste the code into a python file on your host: *sudo nano Flask.py*
+2. Run the Trace Agent for your Flask app: *sudo ddtrace-run python Flask.py*
+3. To see the data captured by the Trace Agent navigate to APM on your UI’s menubar and select Services. Click on the name of the service to see a detailed view. It might take up to 5 minutes for data to show on your Datadog user interface. 
+4. You can trigger more entries by opening a new shell and running: *wget -O - -q http://127.0.0.1:5000/*
+5. You can use the collected metrics on any new or existing dashboards.  When adding a new graph type datadog.trace_agent in the Get field to see available metrics. 
+
+![](https://lh3.googleusercontent.com/lnPF_WWXKa1MPWwzfGsrw0iAcJmYFJSuU4ZGE2eSJL4Pk2Otp4U-CKHU9IJWgKs7K3gtsvtUqL1qll1XiTLEa0V_bbx7qUlKZOUb86v8CtEGYYYAHJEhjgR6sqx88qAakKIFykN0KrEJPjGZRlmM78CMp71noUFYgf1l_T8-Za4ak63I5ezN-L1NF5VAtXDJtXzLz7RbxYZrmk64fwlrXP-pNWtEcPfpnrTfzLlnE0bD6L24gLFhpCQGFKRHrDU-M3nB6hchEA1IsRIuMQI8PuuoquvmSXz4ULlfRC-Nq27cLvcZ_11x57yKoxYTotJUXWMYqfYUSXxxn9BJI0X8CETxtu6WvVE4KN3eZ8rW2jSJlXj1Xx_jGU-TuzXQ94pZkycqeLgNirCGJMFzUbBpd608CiwiIu06funZPjgXQxDSg0vdX3OZpRl0ShnBtYErujFdI2_IT13gcgKOsOUHE-joJZSzFIJYIBM0nzl0n2cRmh8O45uLi9qY5Hrm7q6YfBJjaemc64AuuouqVFIYWkyGKBuBxzZqj__kh8xh77s-MJzAKXvwRo515g5JXiyshGryNlpcHJ8SCmLJFr_mk3_jUKKEsPJDBglDT8ZWNEU=w1017-h548-no)
+
+## Bonus Question: What is the difference between a Service and a Resource?
+https://docs.datadoghq.com/tracing/terminology/
+## Provide a link and a screenshot of a Dashboard with both APM and Infrastructure Metrics.
+https://app.datadoghq.com/dash/407067/screenboard1?live=true&page=0&is_auto=false&from_ts=1511644260000&to_ts=1511647860000
+
+![](https://lh3.googleusercontent.com/nzRXYKZvAYsjFS0l48U7Bq4t7EoiEeNh19SpAprgkg5xXatYDOPDk5SK0NJxfcPXxfE6uDjKpNn_SqnBh0FqQiYtOez-ZtsKXejc6g1yTvtl_KxKrhwTSuCxnHK9nwY9IM3ns2mAtAy2kc_R8dbx6kyjqTJN92UUexQxgnPJzIrFly7Lr3zIHsJVWqS2r-IR7ilfHtSAJhXT7aAetAqhr-Cmaqjk2-EEckoy8g-wGvP2tRgPrHL_qymwPawRouLp27C3Q6sS_-TqesmHHvolDwKMO2BDvkd9hnVxZhZJ1lFtV03brnOig8EyvxI5PPfQ5tMN42yxG7WPADrhQjseRjTpc5FZ35pMOaL2UADbCgovUxz8ji2ULt1yqM33gVyTJf0aFMs3ID2_P2Gps-pAhErIkUGGOZrOm_17gApI6rmsuyO1BbPcqSZrNdV58XNlszdaW-1MeQ43NTLI-DgQOoSIdmsNP9o3yl2Rv3fYNogE9E8m4KDQLTH1QI-u2Eq8jqoC0-16TozO_W4RqWE4UcMMPU64BlbCgxz6JVMSQDgQ7lCY8W4pA1djpfljlIT6WrNnWQ0JEDjOufja4mFdpDHBB4OwkcC6DwPkorb5HbE=w1070-h548-no)
+
