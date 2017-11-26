@@ -1,7 +1,17 @@
 My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. I don’t know the client base of Datadog and so I cannot guess the technical skills of an average client. I am also not an experienced system administrator myself and I don’t necessarily comprehend the significance of each function I used in Datadog. I don’t know the terminology used and prefered by Datadog.  As such I don’t think I can provide a documentation that would serve the best interest of any potential Datadog client.  
 
+## Shotcuts
 [Prerequisites - Setup the environment](#prerequisites-setup-the-environment)
+
 [Collecting Metrics](#collecting-metrics)
+
+[Visualizing Data](#visualizing-data)
+
+[Monitoring Data](#monitoring-data)
+
+[Collecting APM Data](#collecting-apm-data)
+
+[Final Question](final-question)
 
 # Prerequisites: Setup the environment 
 The installation of the Datadog Agent on my virtual machine returned an error. I followed the link provided in the message for additional troubleshooting steps.  There was not much additional information available to troubleshoot my error in the documentation. As a customer I would be very much annoyed if I was directed to a page to find no relevant information available. The second time I run the install commands it went through with the installation.
@@ -270,9 +280,15 @@ To demonstrate the usage and available metrics let’s create an application and
 ![](https://lh3.googleusercontent.com/lnPF_WWXKa1MPWwzfGsrw0iAcJmYFJSuU4ZGE2eSJL4Pk2Otp4U-CKHU9IJWgKs7K3gtsvtUqL1qll1XiTLEa0V_bbx7qUlKZOUb86v8CtEGYYYAHJEhjgR6sqx88qAakKIFykN0KrEJPjGZRlmM78CMp71noUFYgf1l_T8-Za4ak63I5ezN-L1NF5VAtXDJtXzLz7RbxYZrmk64fwlrXP-pNWtEcPfpnrTfzLlnE0bD6L24gLFhpCQGFKRHrDU-M3nB6hchEA1IsRIuMQI8PuuoquvmSXz4ULlfRC-Nq27cLvcZ_11x57yKoxYTotJUXWMYqfYUSXxxn9BJI0X8CETxtu6WvVE4KN3eZ8rW2jSJlXj1Xx_jGU-TuzXQ94pZkycqeLgNirCGJMFzUbBpd608CiwiIu06funZPjgXQxDSg0vdX3OZpRl0ShnBtYErujFdI2_IT13gcgKOsOUHE-joJZSzFIJYIBM0nzl0n2cRmh8O45uLi9qY5Hrm7q6YfBJjaemc64AuuouqVFIYWkyGKBuBxzZqj__kh8xh77s-MJzAKXvwRo515g5JXiyshGryNlpcHJ8SCmLJFr_mk3_jUKKEsPJDBglDT8ZWNEU=w1017-h548-no)
 
 ## Bonus Question: What is the difference between a Service and a Resource?
-https://docs.datadoghq.com/tracing/terminology/
+Service is the name of a set of processes that do the same job. Resource is particular query to a service.
+You can find more information on Tracing Terminology here https://docs.datadoghq.com/tracing/terminology/
+
 ## Provide a link and a screenshot of a Dashboard with both APM and Infrastructure Metrics.
 https://app.datadoghq.com/dash/407067/screenboard1?live=true&page=0&is_auto=false&from_ts=1511644260000&to_ts=1511647860000
 
 ![](https://lh3.googleusercontent.com/nzRXYKZvAYsjFS0l48U7Bq4t7EoiEeNh19SpAprgkg5xXatYDOPDk5SK0NJxfcPXxfE6uDjKpNn_SqnBh0FqQiYtOez-ZtsKXejc6g1yTvtl_KxKrhwTSuCxnHK9nwY9IM3ns2mAtAy2kc_R8dbx6kyjqTJN92UUexQxgnPJzIrFly7Lr3zIHsJVWqS2r-IR7ilfHtSAJhXT7aAetAqhr-Cmaqjk2-EEckoy8g-wGvP2tRgPrHL_qymwPawRouLp27C3Q6sS_-TqesmHHvolDwKMO2BDvkd9hnVxZhZJ1lFtV03brnOig8EyvxI5PPfQ5tMN42yxG7WPADrhQjseRjTpc5FZ35pMOaL2UADbCgovUxz8ji2ULt1yqM33gVyTJf0aFMs3ID2_P2Gps-pAhErIkUGGOZrOm_17gApI6rmsuyO1BbPcqSZrNdV58XNlszdaW-1MeQ43NTLI-DgQOoSIdmsNP9o3yl2Rv3fYNogE9E8m4KDQLTH1QI-u2Eq8jqoC0-16TozO_W4RqWE4UcMMPU64BlbCgxz6JVMSQDgQ7lCY8W4pA1djpfljlIT6WrNnWQ0JEDjOufja4mFdpDHBB4OwkcC6DwPkorb5HbE=w1070-h548-no)
+
+# Final Question
+
+## Datadog has been used in a lot of creative ways in the past. We’ve written some blog posts about using Datadog to monitor the NYC Subway System, Pokemon Go, and even office restroom availability! Is there anything creative you would use Datadog for?
 
