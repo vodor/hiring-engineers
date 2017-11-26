@@ -21,7 +21,7 @@ The installation of the Datadog Agent on my virtual machine returned an error. I
 # Collecting Metrics
 
 ## Add tags in the Agent config file and show us a screenshot of your host and its tags on the Host Map page in Datadog.
-
+ 
 In this step we are going to assign tags to each hosts in our environment. This step is optional but we highly recommend using tags for a better experience. Host Tags will automatically be added to that host's metrics and events, metrics can be filtered and aggregated by Tag. 
 
 You have the option to assign key:value pairs. The key can be region, database, role, env and tags. A good example would be: *region:nsw, application:database, database:primary, tags: test, ubuntu*.
