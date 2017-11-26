@@ -44,9 +44,11 @@ Tags on Infrastructure List | Tags on Host Map
 You can learn more about tags and their uses by navigating here: https://docs.datadoghq.com/guides/tagging/
 
  ## Install a database on your machine (MongoDB, MySQL, or PostgreSQL) and then install the respective Datadog integration for that database.
-We offer several ready to use integrations. You can find the full list of available integrations form your Datadog website (https://app.datadoghq.com). You can find the available metrics for each service by clicking on the name of the service and choosing the Metric tab.
+Datadog offer several ready to use integrations. You can find the full list of available integrations form your Datadog website (https://app.datadoghq.com). You can find the available metrics for each service by clicking on the name of the service and choosing the Metric tab.
 
-1. After logging on to the UI, use the left hand side menu bar to navigate to Integrations and click on Integrations. 
+Below is a guide to a simple MySQL inetegration.
+
+1. After logging on to the Datadog UI, use the left hand side menu bar to navigate to Integrations and click on Integrations. 
 2. Search for the name of the service, or scroll through to find it. 
 3. Once you selected MySQL click on the Configuration tab. 
 4. You will need to create a datadog user on your MySQL server and assign permissions to it as per your requirements.
@@ -97,6 +99,9 @@ I created the requested graphs using the graphical interface, and accessed its J
 ![](https://lh3.googleusercontent.com/8vQwgg2DnJhyouRw2nE6ZIfHkYG0N2fzj0SPuosR7ti7SXszLCJU6gBp7IOdg31GNXZyI9GSg7drmlSQoyyyBP4wx7QtbCkSpPv6gu4ZVB7hIr5_jWYY7qF4z8KRxam8F0NDLaIrVP7jGq6nnYF59Dl2p65MZWkLM7ldEpe5FxsgAao1tfGYVSFavpI_xEbPSP3hwXAtLHpcTl6CDc_QiumdCBFZ96buwcTT0HJdbV8nyrNASVEn0_JQ003qhsvAXpv2PYFZdSvkWDkv50azwihKV3bhPT42nJuqq_PhKEVzmZ5hS8ARDMC7WBaWBHYg2tXneGCnmBFLu2ew0xR1VOhYSQskCQ3WhjqOzT5Qw1kruS1aYqbCjr07K8xsCkJHcNzpAdfpMMTA2v588bPqAHQNoivN4vg1vDTiU2d-kQ5PT33gd4OZlywNn_gT-ou_3UGGRSdRAFnzYm_GIesOixbPdT14p7Q7GF_1jJA_s25X8RaH5sTcpaQY9Fcgxnz9cNp0jmn7yGVtXJ5vEr9T6gIp7epR83bmF3gXSZ9VzJCTcoeDxWPdaTnb8SPeAlk2-BdtfQwO-t6p7y-11VfT48KWujI8ScX2qLb3kRDnAzU=w1043-h548-no)
 
 You can find and examine your JSON file for the dashboard you created above:
+Find you api and app key here: https://app.datadoghq.com/account/settings#api
+Log in to the server.
+Set your api_key and app_key variable.
 To identify the ID of the dashboard run the following on your host: *curl "https://app.datadoghq.com/api/v1/dash?api_key=${api_key}&application_key=${app_key}"*
 
 View the JSON file run the following on your host: *curl "https://app.datadoghq.com/api/v1/dash/${dash_id}?api_key=${api_key}&application_key=${app_key}"*
@@ -209,9 +214,9 @@ I could not send the snapshot to myself in an email. I commented on it, which cr
 
 ## Create a new Metric Monitor that watches the average of your custom metric (my_metric) and will alert if it’s above the following values over the past 5 minutes: Warning threshold of 500. Alerting threshold of 800. And also ensure that it will notify you if there is No Data for this query over the past 10m.
 
-I followed the guidelines https://docs.datadoghq.com/guides/monitors/  and https://docs.datadoghq.com/guides/monitors/ 
+I followed the guidelines https://docs.datadoghq.com/guides/monitors/
 
-1. Open your user interface and use the left hand side menu to open the Monitors menu. Click on New Monitor.
+1. Open your Datadog user interface and use the left hand side menu to open the Monitors menu. Click on New Monitor.
 2. Select Metric from the list on the left hand side. 
 3. Make sure you have Threshold Alert selected on the top of your page.
 4. In the next step you select what metric you want to base your monitor on. Just start typing the name of the metric in the box, or scroll through to find the one.  In my case I used my_metric.
