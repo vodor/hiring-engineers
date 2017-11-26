@@ -1,6 +1,9 @@
 My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. I don’t know the client base of Datadog and so I cannot guess the technical skills of an average client. I am also not an experienced system administrator myself and I don’t necessarily comprehend the significance of each function I used in Datadog. I don’t know the terminology used and prefered by Datadog.  As such I don’t think I can provide a documentation that would serve the best interest of any potential Datadog client.  
 
-# Prerequisites - Setup the environment 
+[Prerequisites - Setup the environment](#prerequisites-setup-the-environment)
+[Collecting Metrics](#collecting-metrics)
+
+# Prerequisites: Setup the environment 
 The installation of the Datadog Agent on my virtual machine returned an error. I followed the link provided in the message for additional troubleshooting steps.  There was not much additional information available to troubleshoot my error in the documentation. As a customer I would be very much annoyed if I was directed to a page to find no relevant information available. The second time I run the install commands it went through with the installation.
 
 ![Install error](https://lh3.googleusercontent.com/F8CqK2pOnMNdJk_UFANppslYT6f35K8a_dlEHvXfkuqSu9Rqihu4z2NEhxZhQqDfcvIsTpJmG1_dZjvkDXTP0IteVKA-l85gtKpMugmxaLQuUh_M9-CWs6Bc3OxPeo6kGU5o73aadBNcO3nJMTKDIfWcevf3p352s6HqfsTqtzu8neVJMb6wH6qGLXiaQZceQyyqhsT0h98nMa20wocc3v0cb6yn14TOkgQqwl4Ni7PDJ_ZAsTL--QBzQ7ZYrU6rzBa_NI1vCoHEuNhynMF06ibrF5Y-0qF4g-MfZs0ujH45iTfhlpGk29mAJuSYCiD_nl_flOtl-X6PWafbte_N1yZmP8LdlJFtKdurlkxjYUh3zbjjcYGq0c1IxZU9VY-24CFKiL3L8DOyM6XMxYxG1UF95eluTTc2fsn6CXX_J7q58jEol_L8vFsP-vAQQGjVE0MlOdGmpRRo2T1pjl2m5VOnssAB16cE-9-2KWjefmv0opgDO3iyzdxjC5FHGUgSKloDdnOUbImNg6P2QkxSanNxe82_-P4bpsghfbttHPZdMl71QZMKO5ORuJ_TLbzHTh_BxeHmx86BtyfCZO02bhN0pIl6P-s5qnftcmEYsWU=w1193-h452-no)
@@ -194,11 +197,7 @@ I could not send the snapshot to myself in an email. I commented on it, which cr
 
 # Monitoring Data
 
-## Create a new Metric Monitor that watches the average of your custom metric (my_metric) and will alert if it’s above the following values over the past 5 minutes:
-
-## Warning threshold of 500
-## Alerting threshold of 800
-## And also ensure that it will notify you if there is No Data for this query over the past 10m.
+## Create a new Metric Monitor that watches the average of your custom metric (my_metric) and will alert if it’s above the following values over the past 5 minutes: Warning threshold of 500. Alerting threshold of 800. And also ensure that it will notify you if there is No Data for this query over the past 10m.
 
 I followed the guidelines https://docs.datadoghq.com/guides/monitors/  and https://docs.datadoghq.com/guides/monitors/ 
 
@@ -266,7 +265,7 @@ To demonstrate the usage and available metrics let’s create an application and
 2. Run the Trace Agent for your Flask app: *sudo ddtrace-run python Flask.py*
 3. To see the data captured by the Trace Agent navigate to APM on your UI’s menubar and select Services. Click on the name of the service to see a detailed view. It might take up to 5 minutes for data to show on your Datadog user interface. 
 4. You can trigger more entries by opening a new shell and running: *wget -O - -q http://127.0.0.1:5000/*
-5. You can use the collected metrics on any new or existing dashboards.  When adding a new graph type datadog.trace_agent in the Get field to see available metrics. 
+5. You can use the collected metrics on any new or existing dashboards.  When adding a new graph **type datadog.trace_agent** in the **Get** field to see available metrics. 
 
 ![](https://lh3.googleusercontent.com/lnPF_WWXKa1MPWwzfGsrw0iAcJmYFJSuU4ZGE2eSJL4Pk2Otp4U-CKHU9IJWgKs7K3gtsvtUqL1qll1XiTLEa0V_bbx7qUlKZOUb86v8CtEGYYYAHJEhjgR6sqx88qAakKIFykN0KrEJPjGZRlmM78CMp71noUFYgf1l_T8-Za4ak63I5ezN-L1NF5VAtXDJtXzLz7RbxYZrmk64fwlrXP-pNWtEcPfpnrTfzLlnE0bD6L24gLFhpCQGFKRHrDU-M3nB6hchEA1IsRIuMQI8PuuoquvmSXz4ULlfRC-Nq27cLvcZ_11x57yKoxYTotJUXWMYqfYUSXxxn9BJI0X8CETxtu6WvVE4KN3eZ8rW2jSJlXj1Xx_jGU-TuzXQ94pZkycqeLgNirCGJMFzUbBpd608CiwiIu06funZPjgXQxDSg0vdX3OZpRl0ShnBtYErujFdI2_IT13gcgKOsOUHE-joJZSzFIJYIBM0nzl0n2cRmh8O45uLi9qY5Hrm7q6YfBJjaemc64AuuouqVFIYWkyGKBuBxzZqj__kh8xh77s-MJzAKXvwRo515g5JXiyshGryNlpcHJ8SCmLJFr_mk3_jUKKEsPJDBglDT8ZWNEU=w1017-h548-no)
 
