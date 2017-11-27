@@ -1,7 +1,7 @@
-My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. 
-Key to any good documentation is knowing your audience, consistent terminology through all interfaces and consistent styling.
+My understanding of the exercise is to provide a step by step document for a potential Datadog customer or client to follow. 
+Key to any good documentation is knowing your audience, keeping consistent terminology throughout and use consistent styling.
 
-My documentation below lacks the qualities above. 
+I feel that my documentation below lacks the qualities above. 
 
 
 ## Shortcuts
