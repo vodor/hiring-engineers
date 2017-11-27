@@ -1,7 +1,7 @@
 My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. 
 Key to any good documentation is knowing your audience, consistent terminology through all interfaces and consistent styling.
 
-My documenation below lacks the qualities above. 
+My documentation below lacks the qualities above. 
 
 
 ## Shortcuts
@@ -50,7 +50,7 @@ You can learn more about tags and their uses by navigating here: https://docs.da
  ## Install a database on your machine (MongoDB, MySQL, or PostgreSQL) and then install the respective Datadog integration for that database.
 Datadog offer several ready to use integrations. You can find the full list of available integrations form your Datadog website (https://app.datadoghq.com). You can find the available metrics for each service by clicking on the name of the service and choosing the Metric tab.
 
-Below is a guide to a simple MySQL inetegration.
+Below is a guide to a simple MySQL integration.
 
 1. After logging on to the Datadog UI, use the left hand side menu bar to navigate to Integrations and click on Integrations. 
 2. Search for the name of the service, or scroll through to find it. 
