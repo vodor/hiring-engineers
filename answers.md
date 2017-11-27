@@ -1,6 +1,9 @@
-My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. I don’t know the client base of Datadog and so I cannot guess the technical skills of an average client. I am also not an experienced system administrator myself and I don’t necessarily comprehend the significance of each function I used in Datadog. I don’t know the terminology used and prefered by Datadog.  As such I don’t think I can provide a documentation that would serve the best interest of any potential Datadog client.  
+My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. 
+Key to any good documentation is knowing your audience, consistent terminology through all interfaces and consistent styling. 
+My documenation below lacks the qualities above. 
 
-## Shotcuts
+
+## Shortcuts
 [Prerequisites - Setup the environment](#prerequisites-setup-the-environment)
 
 [Collecting Metrics](#collecting-metrics)
@@ -11,7 +14,7 @@ My understanding of the exercise is to provide a step by step documentation for 
 
 [Collecting APM Data](#collecting-apm-data)
 
-[Final Question](final-question)
+[Final Question](#final-question)
 
 # Prerequisites: Setup the environment 
 The installation of the Datadog Agent on my virtual machine returned an error. I followed the link provided in the message for additional troubleshooting steps.  There was not much additional information available to troubleshoot my error in the documentation. As a customer I would be very much annoyed if I was directed to a page to find no relevant information available. The second time I run the install commands it went through with the installation.
@@ -204,9 +207,11 @@ You can however highlight any given portion of the graph to zoom in on the data.
 
 ## Take a snapshot of this graph and use the @ notation to send it to yourself.
 
-I could not send the snapshot to myself in an email. I commented on it, which created an event on my eventstream with the snapshot and my comment tagged me in. 
+I could not send the snapshot to myself in an email. I commented on it, which created an event on my eventstream with the snapshot and my comment tagged me in. I received the sceenshot of the graph in my Daily Digest for Datadog.
 
 ![](https://lh3.googleusercontent.com/pB9sG13UPMrauEos8ONPiAVZLFd4IzzJjdtjt2bdo9BzBZ3Fr60Fl5UiUibxj951W2FJ5XUiU0ihTCgfla2qBXg6AiRRzZgW9S674VOclkIt38agymYPCM1e71F2dB20MrnWScnRiUpQHh1gPBZsd4VMckpdrXF9HsfQcH_Mu6tUxlM0i2TFp4l7EQa6fdUSw3tYPfpKUMpbcQRjeiAkkpM9b2jRSspaQudHqPUm11i8NF_mjAAsHsAgI3FhKXUEDBwGWyUstS6G-2TgP_EGesCY7-TXYVWNMewS6cCICfaABvGN4VV26i78jWu2DXwcw4PRjzrWBrrXuHEwULqEIgNgdVOZMKJbyAYiPOzv2onlbl4y9DdIyS7duF6DzcuGatrCSBgBfwOohgLnR7p0J1UBdlhZZxz4cp9D9CQoop0lZWOKpFPnNUYtLFJGFdNirPTPHuBGoyQQ8mbWvaeV7CVX1Ps3f2FwcwnHa2xwK3fOit9YGKRqhm3eQIn5KkAPAX3Gz38vLsp09xjAWvAEsZU-h6GOy5JBKwn4vO9OfFvuWED1W93RYPs_vcc8awMdLltyiRgPaA-l5fy_c7WyH1OVx1uOIJp125gPA_zeXio=w867-h315-no)
+
+![](https://lh3.googleusercontent.com/iRrzumojW7pUFg2mZUdkLnC2TQCk0qh9gSFbC_7KGxb5dxvk5ysCMYlaPFaA9qwlkReZc1bPW1vN7uT7mCZDZwBqI0P6Gj19WStwkjAsWemvJTijEWX6a5lKnIOL-O0vnFRNEUn-pUvVWYYwfTszuDt9iAGBFJlYWtXJZ9MjL0q9cC-2dzLH1fRGDydhRJlTex_EWSDBx4TvacT20HE6mGnulObL8hslVI4dFq2XW_DA0gEHtv31Qq8HRKC7Wjt9E9foxZspKVaHi6y3n4GFn_nr_CWVpzYQh2UR6nwa6qcC59znnxF1ifL_wIQq5Pehdanyn5rL26j0q-Nf25KdKiRWj19XqJ5Cgy4RPv3gD4RsXdgsJbHSzXC4B3s46UjnIcXhquHaU_kA1UeXd-_X_-Tj0keqb2JF6K3dtSBgG5aSDUrxvHQn2h_HQ8cXrMfrag_zT2NA6GpqcqpEfs9SslpzZcNJBF44n8cRefOgFvwcrZ44hTIwCuIO--MKO_Ld6bG1d_zEXK7n8W38kgFqdPKspaxoZwaynOHGMZm7g560glvJa4BhEZJ5r_C1B1up1lpt7Qxs91NvpNxGSAfju6Y6CTKJOKtXKn7Oi5l7CT4=w788-h457-no)
 
 ## Bonus Question: What is the Anomaly graph displaying?
 
@@ -297,3 +302,4 @@ https://app.datadoghq.com/dash/407067/screenboard1?live=true&page=0&is_auto=fals
 
 ## Datadog has been used in a lot of creative ways in the past. We’ve written some blog posts about using Datadog to monitor the NYC Subway System, Pokemon Go, and even office restroom availability! Is there anything creative you would use Datadog for?
 
+Monitoring data is always interesting whatever you hook it up with. I would love to monitor my bee hive's internal and external temperature and the noise they make during the day with a microcontroller and see graphs and correlation if any between the collected data. Datadog would be an overkill for such a project. Unless I buy more hives. A lot more hives.  
