@@ -215,6 +215,7 @@ I could not send the snapshot to myself in an email. I commented on it, which cr
 ![](https://lh3.googleusercontent.com/iRrzumojW7pUFg2mZUdkLnC2TQCk0qh9gSFbC_7KGxb5dxvk5ysCMYlaPFaA9qwlkReZc1bPW1vN7uT7mCZDZwBqI0P6Gj19WStwkjAsWemvJTijEWX6a5lKnIOL-O0vnFRNEUn-pUvVWYYwfTszuDt9iAGBFJlYWtXJZ9MjL0q9cC-2dzLH1fRGDydhRJlTex_EWSDBx4TvacT20HE6mGnulObL8hslVI4dFq2XW_DA0gEHtv31Qq8HRKC7Wjt9E9foxZspKVaHi6y3n4GFn_nr_CWVpzYQh2UR6nwa6qcC59znnxF1ifL_wIQq5Pehdanyn5rL26j0q-Nf25KdKiRWj19XqJ5Cgy4RPv3gD4RsXdgsJbHSzXC4B3s46UjnIcXhquHaU_kA1UeXd-_X_-Tj0keqb2JF6K3dtSBgG5aSDUrxvHQn2h_HQ8cXrMfrag_zT2NA6GpqcqpEfs9SslpzZcNJBF44n8cRefOgFvwcrZ44hTIwCuIO--MKO_Ld6bG1d_zEXK7n8W38kgFqdPKspaxoZwaynOHGMZm7g560glvJa4BhEZJ5r_C1B1up1lpt7Qxs91NvpNxGSAfju6Y6CTKJOKtXKn7Oi5l7CT4=w788-h457-no)
 
 ## Bonus Question: What is the Anomaly graph displaying?
+The gray band represents the region where the metric is expected to be based on past behavior. The blue and red line is the actual observed value of the metric; the line is blue when within the expected range and red when it is outside of the expected range.
 
 # Monitoring Data
 
