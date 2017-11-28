@@ -1,8 +1,7 @@
 My understanding of the exercise is to provide a step by step document for a potential Datadog customer or client to follow. 
 Key to any good documentation is knowing your audience, keeping consistent terminology throughout and use consistent styling.
 
-I feel that my documentation below lacks the qualities above. 
-
+My document below cannot be perfect because of the limitations the exercise imposed on me.
 
 ## Shortcuts
 [Prerequisites - Setup the environment](#prerequisites-setup-the-environment)
