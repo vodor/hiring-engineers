@@ -1,7 +1,7 @@
-My understanding of the exercise is to provide a step by step documentation for a potential Datadog customer or client to follow. 
-Key to any good documentation is knowing your audience, consistent terminology through all interfaces and consistent styling. 
-My documenation below lacks the qualities above. 
+My understanding of the exercise is to provide a step by step document for a potential Datadog customer or client to follow. 
+Key to any good documentation is knowing your audience, keeping consistent terminology throughout and use consistent styling.
 
+My document below cannot be perfect because of the limitations the exercise imposed on me.
 
 ## Shortcuts
 [Prerequisites - Setup the environment](#prerequisites-setup-the-environment)
@@ -49,7 +49,7 @@ You can learn more about tags and their uses by navigating here: https://docs.da
  ## Install a database on your machine (MongoDB, MySQL, or PostgreSQL) and then install the respective Datadog integration for that database.
 Datadog offer several ready to use integrations. You can find the full list of available integrations form your Datadog website (https://app.datadoghq.com). You can find the available metrics for each service by clicking on the name of the service and choosing the Metric tab.
 
-Below is a guide to a simple MySQL inetegration.
+Below is a guide to a simple MySQL integration.
 
 1. After logging on to the Datadog UI, use the left hand side menu bar to navigate to Integrations and click on Integrations. 
 2. Search for the name of the service, or scroll through to find it. 
@@ -214,6 +214,7 @@ I could not send the snapshot to myself in an email. I commented on it, which cr
 ![](https://lh3.googleusercontent.com/iRrzumojW7pUFg2mZUdkLnC2TQCk0qh9gSFbC_7KGxb5dxvk5ysCMYlaPFaA9qwlkReZc1bPW1vN7uT7mCZDZwBqI0P6Gj19WStwkjAsWemvJTijEWX6a5lKnIOL-O0vnFRNEUn-pUvVWYYwfTszuDt9iAGBFJlYWtXJZ9MjL0q9cC-2dzLH1fRGDydhRJlTex_EWSDBx4TvacT20HE6mGnulObL8hslVI4dFq2XW_DA0gEHtv31Qq8HRKC7Wjt9E9foxZspKVaHi6y3n4GFn_nr_CWVpzYQh2UR6nwa6qcC59znnxF1ifL_wIQq5Pehdanyn5rL26j0q-Nf25KdKiRWj19XqJ5Cgy4RPv3gD4RsXdgsJbHSzXC4B3s46UjnIcXhquHaU_kA1UeXd-_X_-Tj0keqb2JF6K3dtSBgG5aSDUrxvHQn2h_HQ8cXrMfrag_zT2NA6GpqcqpEfs9SslpzZcNJBF44n8cRefOgFvwcrZ44hTIwCuIO--MKO_Ld6bG1d_zEXK7n8W38kgFqdPKspaxoZwaynOHGMZm7g560glvJa4BhEZJ5r_C1B1up1lpt7Qxs91NvpNxGSAfju6Y6CTKJOKtXKn7Oi5l7CT4=w788-h457-no)
 
 ## Bonus Question: What is the Anomaly graph displaying?
+The gray band represents the region where the metric is expected to be based on past behavior. The blue and red line is the actual observed value of the metric; the line is blue when within the expected range and red when it is outside of the expected range.
 
 # Monitoring Data
 
